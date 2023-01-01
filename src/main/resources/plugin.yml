@@ -1,0 +1,6 @@
+name: Trash
+version: 6.9
+author: Notch
+main: xyz.davidpineiro.trash.Trash
+depend: [ ProtocolLib ]
+
