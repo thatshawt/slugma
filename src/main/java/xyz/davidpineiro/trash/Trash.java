@@ -48,7 +48,9 @@ public class Trash extends JavaPlugin implements Listener {
     @EventHandler
     public void onsus(AsyncPlayerChatEvent e){
         if(e.getMessage().equalsIgnoreCase("sussy fortnite balls")){
-            e.getPlayer().getWorld().spawnEntity(e.getPlayer().getLocation(), EntityType.LIGHTNING);
+            Bukkit.getScheduler().runTask(this, () -> {
+                e.getPlayer().getWorld().spawnEntity(e.getPlayer().getLocation(), EntityType.LIGHTNING);
+            });
             return;
         }
 
