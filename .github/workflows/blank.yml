@@ -50,8 +50,8 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots clean install
 
-      -name: debug print stuff
-       run: ls -l
+      - name: debug print stuff
+        run: ls -l
 
       - name: deploy plugin jar to aws s3
         run: aws s3 sync --delete --acl public-read ./target/JunkManServer-1.0-SNAPSHOT.jar s3://supermario1/minecraft_server/JunkManServer-1.0-SNAPSHOT.jar
