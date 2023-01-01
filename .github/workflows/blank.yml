@@ -49,7 +49,7 @@ jobs:
         run: pwd && ls -l && ls -l target
 
       - name: deploy plugin jar to aws s3
-        run: aws s3 sync --delete --acl public-read ./target/JunkManServer-1.0-SNAPSHOT.jar s3://supermario1/minecraft_server/JunkManServer-1.0-SNAPSHOT.jar
+        run: aws s3 cp ./target/JunkManServer-1.0-SNAPSHOT.jar s3://supermario1/minecraft_server/JunkManServer-1.0-SNAPSHOT.jar
 
       - name: tell server that we are done updating stuff so it can restart
         uses: distributhor/workflow-webhook@v2
