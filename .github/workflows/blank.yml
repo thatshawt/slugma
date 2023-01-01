@@ -46,7 +46,7 @@ jobs:
         run: mvn --batch-mode --update-snapshots clean package install
 
       - name: debug print stuff
-        run: ls -l && ls -l target
+        run: pwd && ls -l && ls -l target
 
       - name: deploy plugin jar to aws s3
         run: aws s3 sync --delete --acl public-read ./target/JunkManServer-1.0-SNAPSHOT.jar s3://supermario1/minecraft_server/JunkManServer-1.0-SNAPSHOT.jar
