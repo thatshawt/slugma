@@ -11,6 +11,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.SoundCategory;
 import org.bukkit.block.Block;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -48,6 +49,10 @@ public class Trash extends JavaPlugin implements Listener {
     public void onsus(AsyncPlayerChatEvent e){
         final String sound = songSoundMap.get(e.getMessage().toLowerCase().strip());
         if(sound == null)return;
+        if(e.getMessage().equalsIgnoreCase("sussy fortnite balls")){
+            e.getPlayer().getWorld().spawnEntity(e.getPlayer().getLocation(), EntityType.LIGHTNING);
+            return;
+        }
 
         try {
             Player player = e.getPlayer();
