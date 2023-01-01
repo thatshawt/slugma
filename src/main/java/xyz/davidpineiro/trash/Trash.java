@@ -47,12 +47,13 @@ public class Trash extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onsus(AsyncPlayerChatEvent e){
-        final String sound = songSoundMap.get(e.getMessage().toLowerCase().strip());
-        if(sound == null)return;
         if(e.getMessage().equalsIgnoreCase("sussy fortnite balls")){
             e.getPlayer().getWorld().spawnEntity(e.getPlayer().getLocation(), EntityType.LIGHTNING);
             return;
         }
+
+        final String sound = songSoundMap.get(e.getMessage().toLowerCase().strip());
+        if(sound == null)return;
 
         try {
             Player player = e.getPlayer();
