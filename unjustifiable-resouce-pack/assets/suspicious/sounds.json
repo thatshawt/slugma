@@ -1,56 +1,59 @@
 {
-  "sussy.fort_balls1": {
-	"subtitle":"sussyballs",
-    "sounds": [
-      {
-	  "name":"suspicious:sussy_balls",
-	  "stream":true
-	  }
-    ]
-  },
-  "sussy.interstellar": {
-	"subtitle":"interstellar",
-    "sounds": [
-		{
-			"name":"suspicious:interstellar",
-			"stream": true
-		}
-    ]
-  },
-  "sussy.kendrick_adhd": {
-	"subtitle":"kendrick got adhd",
-    "sounds": [
-		{
-			"name":"suspicious:kendrick_adhd",
-			"stream": true
-		}
-    ]
-  },
-  "sussy.bjork_sus1": {
-	"subtitle":"bjork susy balls",
-    "sounds": [
-		{
-			"name":"suspicious:bjork_sus1",
-			"stream": true
-		}
-    ]
-  },
-    "sussy.wikipedia_horror": {
-	"subtitle":"wikipedia usy balls",
-    "sounds": [
-		{
-			"name":"suspicious:wikipedia_horror3",
-			"stream": true
-		}
-    ]
-  },
-  "sussy.fortnitesusballsabstract": {
-	"subtitle":"how fornite has failed society",
-    "sounds": [
-		{
-			"name":"suspicious:fortnitesusballsabstract",
-			"stream": true
-		}
-    ]
-  }
+	"sussy.fort_balls1": {
+		"subtitle": "sussyballs",
+		"sounds": [
+			{
+				"name": "suspicious:sussy_balls",
+				"stream": true
+			}
+		]
+	},
+	"sussy.interstellar": {
+		"subtitle": "interstellar",
+		"sounds": [
+			{
+				"name": "suspicious:music/interstellar",
+				"stream": true
+			}
+		]
+	},
+	"sussy.kendrick_adhd": {
+		"subtitle": "kendrick got adhd",
+		"sounds": [
+			{
+				"name": "suspicious:music/kendrick_adhd",
+				"stream": true
+			}
+		]
+	},
+	"sussy.bjork_sus1": {
+		"subtitle": "bjork susy balls",
+		"sounds": [
+			{
+				"name": "suspicious:music/bjork_sus1",
+				"stream": true
+			}
+		]
+	},
+	"sussy.fortnitesusballsabstract": {
+		"subtitle": "how fornite has failed society",
+		"sounds": [
+			{
+				"name": "suspicious:fortnitesusballsabstract",
+				"stream": true
+			}
+		]
+	},
+	"sussy.transportchicken.receiver_receive": {
+		"subtitle": "transport chicken receive",
+		"sounds": [
+			"suspicious:transportchicken/receiver_receive"
+		]
+	},
+	"sussy.transportchicken.user_activate": {
+		"subtitle": "transport chicken send",
+		"sounds": [
+			"suspicious:transportchicken/user_activate"
+		]
+	}
 }

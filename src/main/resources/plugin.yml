@@ -4,3 +4,9 @@ author: Notch
 main: xyz.davidpineiro.trash.Trash
 depend: [ ProtocolLib ]
 
+commands:
+  tc:
+    description: transport chicken main command
+    usage: /<command> [sussy|baka]
+#    permission: yourplugin.yourcommandpermission
+
