@@ -36,7 +36,7 @@ public class TransportChicken implements CommandExecutor, Listener {
         return () -> {
             try {
                 final World world = to.getWorld();
-                Item droppedItem = world.dropItem(to.getLocation().add(0, 5, 0), handItem);
+                Item droppedItem = world.dropItem(to.getLocation().add(0, 1, 0), handItem);
                 droppedItem.setVelocity(VECTOR_ZERO);
 
 //                final Chicken chicken = (Chicken)world.spawnEntity(to.getLocation(), EntityType.CHICKEN);
