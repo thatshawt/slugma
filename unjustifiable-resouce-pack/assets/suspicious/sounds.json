@@ -35,6 +35,33 @@
 			}
 		]
 	},
+	"sussy.howls_castle": {
+		"subtitle": "howls moving castle",
+		"sounds": [
+			{
+				"name": "suspicious:music/howls_moving_castle",
+				"stream": true
+			}
+		]
+	},
+	"sussy.hotelcalifornia": {
+		"subtitle": "hotel california",
+		"sounds": [
+			{
+				"name": "suspicious:music/hotel_california",
+				"stream": true
+			}
+		]
+	},
+	"sussy.rocketman": {
+		"subtitle": "rocket man",
+		"sounds": [
+			{
+				"name": "suspicious:music/rocket_man",
+				"stream": true
+			}
+		]
+	},
 	"sussy.fortnitesusballsabstract": {
 		"subtitle": "how fornite has failed society",
 		"sounds": [
@@ -54,6 +81,24 @@
 		"subtitle": "transport chicken send",
 		"sounds": [
 			"suspicious:transportchicken/user_activate"
+		]
+	},
+	"sussy.sfx.vineboom": {
+		"subtitle": "vine boom",
+		"sounds": [
+			"suspicious:sfx/vine-boom-meme"
+		]
+	},
+	"sussy.sfx.vineboomlowquality": {
+		"subtitle": "vine boom low quality",
+		"sounds": [
+			"suspicious:sfx/vine-boom-low-quality"
+		]
+	},
+	"sussy.sfx.wetfart": {
+		"subtitle": "wet fart",
+		"sounds": [
+			"suspicious:sfx/wet-fart-meme-vine"
 		]
 	}
 }

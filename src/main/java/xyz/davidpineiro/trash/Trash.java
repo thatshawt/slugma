@@ -51,8 +51,10 @@ public class Trash extends JavaPlugin implements Listener {
         songSoundMap.put("kendrick", "suspicious:sussy.kendrick_adhd");
         songSoundMap.put("bjork", "suspicious:sussy.bjork_sus1");
         songSoundMap.put("crackbaby2", "suspicious:sussy.fortnitesusballsabstract");
+        songSoundMap.put("howl", "suspicious:sussy.howls_castle");
+        songSoundMap.put("california", "suspicious:sussy.hotelcalifornia");
+        songSoundMap.put("rocket man", "suspicious:sussy.rocketman");
     }
-
 
     @Override
     public void onDisable() {
