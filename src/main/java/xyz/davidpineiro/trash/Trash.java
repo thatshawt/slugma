@@ -19,10 +19,13 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.RayTraceResult;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Trash extends JavaPlugin implements Listener {
+
+    TransportChicken transportChicken;
 
     private ProtocolManager protocolManager;
 
@@ -34,9 +37,9 @@ public class Trash extends JavaPlugin implements Listener {
 
         PluginManager manager = Bukkit.getPluginManager();
 
-        TransportChicken transportChicken = new TransportChicken(this);
-        manager.registerEvents(transportChicken, this);
+        transportChicken = new TransportChicken(this);
 
+        manager.registerEvents(transportChicken, this);
         manager.registerEvents(this, this);
 
         this.getCommand("tc").setExecutor(transportChicken);
@@ -48,6 +51,16 @@ public class Trash extends JavaPlugin implements Listener {
         songSoundMap.put("kendrick", "suspicious:sussy.kendrick_adhd");
         songSoundMap.put("bjork", "suspicious:sussy.bjork_sus1");
         songSoundMap.put("crackbaby2", "suspicious:sussy.fortnitesusballsabstract");
+    }
+
+
+    @Override
+    public void onDisable() {
+        try {
+            transportChicken.onDisable();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @EventHandler
