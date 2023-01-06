@@ -62,8 +62,10 @@ public class TransportChicken implements CommandExecutor, Listener {
                 Item droppedItem = world.dropItem(to.getLocation().add(0, 1, 0), handItem);
                 droppedItem.setVelocity(VECTOR_ZERO);
 
-                to.playSound(to.getLocation(),
-                        "suspicious:sussy.transportchicken.receiver_receive", 1, 1);
+//                to.playSound(to.getLocation(),
+//                        "suspicious:sussy.transportchicken.receiver_receive", 1, 1);
+                Trounds.Sfx.tc_receive.playForPlayer(to, 1, 1);
+
             }catch(Exception exception){
                 exception.printStackTrace();
             }
@@ -89,10 +91,10 @@ public class TransportChicken implements CommandExecutor, Listener {
     private void startTransport(Player player, Location destination){
         try {
             ItemStack handItem = player.getInventory().getItemInMainHand().clone();
-//            if(handItem.getType() == Material.AIR)return;
+            if(handItem.getType() == Material.AIR)return;
             player.getInventory().setItemInMainHand(ITEM_AIR);
-            player.playSound(player.getLocation(),
-                    "suspicious:sussy.transportchicken.user_activate", 1, 1);
+
+            Trounds.Sfx.tc_activate.playForPlayer(player, 1, 1);
 
             Bukkit.getScheduler().runTaskLater(trash,
                     getEndTeleportRunnable(destination, handItem),
@@ -107,10 +109,11 @@ public class TransportChicken implements CommandExecutor, Listener {
     private void startTransport(Player player, Player to){
         try {
             ItemStack handItem = player.getInventory().getItemInMainHand().clone();
-//            if(handItem.getType() == Material.AIR)return;
+            if(handItem.getType() == Material.AIR)return;
+
             player.getInventory().setItemInMainHand(ITEM_AIR);
-            player.playSound(player.getLocation(),
-                    "suspicious:sussy.transportchicken.user_activate", 1, 1);
+
+            Trounds.Sfx.tc_activate.playForPlayer(player, 1, 1);
 
             Bukkit.getScheduler().runTaskLater(trash,
                     getEndTeleportRunnable(to, handItem),
@@ -135,7 +138,6 @@ public class TransportChicken implements CommandExecutor, Listener {
 
             startTransport(player, destination);
 
-            player.playSound(player.getLocation(), "suspicious:sussy.transportchicken.user_activate", 1, 1);
             return true;
         }else if(args.length == 1){// "/tc player_name"
             try{

@@ -46,14 +46,12 @@ public class Trash extends JavaPlugin implements Listener {
 
         protocolManager = ProtocolLibrary.getProtocolManager();
 
-        songSoundMap.put("crackbaby1", "suspicious:sussy.fort_balls1");
-        songSoundMap.put("interstellar", "suspicious:sussy.interstellar");
-        songSoundMap.put("kendrick", "suspicious:sussy.kendrick_adhd");
-        songSoundMap.put("bjork", "suspicious:sussy.bjork_sus1");
-        songSoundMap.put("crackbaby2", "suspicious:sussy.fortnitesusballsabstract");
-        songSoundMap.put("howl", "suspicious:sussy.howls_castle");
-        songSoundMap.put("california", "suspicious:sussy.hotelcalifornia");
-        songSoundMap.put("rocket man", "suspicious:sussy.rocketman");
+        songSoundMap.put("interstellar", Trounds.Music.interstellar.getSongID());
+        songSoundMap.put("kendrick", Trounds.Music.kendrick.getSongID());
+        songSoundMap.put("bjork", Trounds.Music.bjork.getSongID());
+        songSoundMap.put("howl", Trounds.Music.howls_castle.getSongID());
+        songSoundMap.put("california", Trounds.Music.hotel_california.getSongID());
+        songSoundMap.put("rocket man", Trounds.Music.rocket_man.getSongID());
     }
 
     @Override
